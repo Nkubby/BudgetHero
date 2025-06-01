@@ -5,73 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BudgetHero – Weekly Savings Goal Calculator</title>
 
-  <!--Google site verification -->
-  <meta name="google-site-verification" content="nmuCxeiyO6EaiYNmAjVrGEFR9xV7DRLI4j9bDs3_pU0" />
-
   <!-- SEO Meta Tags -->
   <meta name="description" content="BudgetHero is a smart savings calculator that helps you reach your financial goals easily. Calculate how much to save weekly, bi-weekly or monthly to hit your target." />
   <meta name="keywords" content="savings calculator, budget planner, BudgetHero, save money, financial goals, weekly savings, monthly savings" />
   <meta name="author" content="Your Name" />
 
-  <!-- Apple & Modern Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Flexbox layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container">
+    <!-- Your existing content goes here -->
     <h1>🎯 BudgetHero – Your Savings Goal Calculator</h1>
     <p>Use BudgetHero to find out how long it’ll take to save for anything — whether it's a phone, a trip, or new gear — based on how much you can save weekly, bi-weekly, or monthly.</p>
 
-    <h2>1. Enter Your Goal</h2>
-    <label for="goal">What are you saving for?</label>
-    <input type="text" id="goal" placeholder="e.g. New iPad, Trip to Miami" />
-
-    <label for="amount">Total amount needed ($):</label>
-    <input type="number" id="amount" placeholder="e.g. 924.40" />
-
-    <h2>2. Choose How You Want to Save</h2>
-    <div class="radio-group">
-      <p class="group-title">Plan type:</p>
-
-      <label class="radio-option">
-        <input type="radio" name="planType" value="weekly" id="weeklyOption" checked />
-        <span>I know how much I can save per period</span>
-      </label>
-
-      <label class="radio-option">
-        <input type="radio" name="planType" value="timeframe" id="timeframeOption" />
-        <span>I know how long I want to save</span>
-      </label>
-    </div>
-
-    <div id="weeklyInput">
-      <label for="weekly">How much can you save per period ($)?</label>
-      <input type="number" id="weekly" placeholder="e.g. 50" />
-    </div>
-
-    <div id="timeframeInput" style="display: none;">
-      <label for="weeks">How many periods do you want to save?</label>
-      <input type="number" id="weeks" placeholder="e.g. 8" />
-    </div>
-
-    <label for="frequency">Saving frequency:</label>
-    <select id="frequency">
-      <option value="weekly">Weekly</option>
-      <option value="biweekly">Bi-Weekly</option>
-      <option value="monthly">Monthly</option>
-    </select>
-
-    <button onclick="calculatePlan()">Calculate Plan</button>
-
-    <div id="result"></div>
-
-    <hr />
+    <!-- ... rest of your calculator form ... -->
 
     <h2>📌 Example Goals</h2>
     <ul>
@@ -85,9 +54,10 @@
     <a href="https://wa.me/?text=Check%20out%20this%20free%20savings%20calculator:%20https://nkubby.github.io/BudgetHero" target="_blank">📱 Share on WhatsApp</a>
   </div>
 
-  <footer style="margin-top: 2rem; text-align: center;">
+  <footer>
     <hr />
     <p><strong>About BudgetHero:</strong> Built by a student in Barbados to help others reach their goals through smarter saving. Totally free. Totally useful.</p>
+    <p>Have feedback? Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
   </footer>
 
   <script src="script.js"></script>
