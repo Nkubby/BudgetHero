@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BudgetHero</title>
+  <title>BudgetHero – Weekly Savings Goal Calculator</title>
 
   <!--Google site verification -->
   <meta name="google-site-verification" content="nmuCxeiyO6EaiYNmAjVrGEFR9xV7DRLI4j9bDs3_pU0" />
@@ -25,36 +25,39 @@
 
 <body>
   <div class="container">
-    <h1>🎯 Savings Calculator</h1>
+    <h1>🎯 BudgetHero – Your Savings Goal Calculator</h1>
+    <p>Use BudgetHero to find out how long it’ll take to save for anything — whether it's a phone, a trip, or new gear — based on how much you can save weekly, bi-weekly, or monthly.</p>
 
+    <h2>1. Enter Your Goal</h2>
     <label for="goal">What are you saving for?</label>
-    <input type="text" id="goal" placeholder="e.g. New Ipad, Trip to Miami">
+    <input type="text" id="goal" placeholder="e.g. New iPad, Trip to Miami" />
 
     <label for="amount">Total amount needed ($):</label>
-    <input type="number" id="amount" placeholder="e.g. 924.40">
+    <input type="number" id="amount" placeholder="e.g. 924.40" />
 
+    <h2>2. Choose How You Want to Save</h2>
     <div class="radio-group">
-      <p class="group-title">Choose your plan type:</p>
+      <p class="group-title">Plan type:</p>
 
       <label class="radio-option">
-        <input type="radio" name="planType" value="weekly" id="weeklyOption" checked>
-        <span>I know how much I can save weekly</span>
+        <input type="radio" name="planType" value="weekly" id="weeklyOption" checked />
+        <span>I know how much I can save per period</span>
       </label>
 
       <label class="radio-option">
-        <input type="radio" name="planType" value="timeframe" id="timeframeOption">
+        <input type="radio" name="planType" value="timeframe" id="timeframeOption" />
         <span>I know how long I want to save</span>
       </label>
     </div>
 
     <div id="weeklyInput">
       <label for="weekly">How much can you save per period ($)?</label>
-      <input type="number" id="weekly" placeholder="e.g. 50">
+      <input type="number" id="weekly" placeholder="e.g. 50" />
     </div>
 
     <div id="timeframeInput" style="display: none;">
       <label for="weeks">How many periods do you want to save?</label>
-      <input type="number" id="weeks" placeholder="e.g. 8">
+      <input type="number" id="weeks" placeholder="e.g. 8" />
     </div>
 
     <label for="frequency">Saving frequency:</label>
@@ -67,7 +70,25 @@
     <button onclick="calculatePlan()">Calculate Plan</button>
 
     <div id="result"></div>
+
+    <hr />
+
+    <h2>📌 Example Goals</h2>
+    <ul>
+      <li>⚽ Save $300 for a soccer kit by putting away $25/week = 12 weeks</li>
+      <li>📱 Buy a $900 phone by saving $75 bi-weekly = 12 weeks</li>
+      <li>🏝️ Take a $1200 trip by saving $100/month = 12 months</li>
+    </ul>
+
+    <h2>📤 Share BudgetHero</h2>
+    <p>Found this helpful? Share it with your friends and help them start saving too!</p>
+    <a href="https://wa.me/?text=Check%20out%20this%20free%20savings%20calculator:%20https://nkubby.github.io/BudgetHero" target="_blank">📱 Share on WhatsApp</a>
   </div>
+
+  <footer style="margin-top: 2rem; text-align: center;">
+    <hr />
+    <p><strong>About BudgetHero:</strong> Built by a student in Barbados to help others reach their goals through smarter saving. Totally free. Totally useful.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
