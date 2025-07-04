@@ -191,3 +191,21 @@ footer a {
     font-size: 13px;
   }
 }
+
+.share-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.share-link {
+  font-size: 16px;
+  color: #2b6653;
+  text-decoration: underline;
+  font-style: italic;
+  transition: color 0.2s ease;
+}
+
+.share-link:hover {
+  color: #1a4436;
+}
+
